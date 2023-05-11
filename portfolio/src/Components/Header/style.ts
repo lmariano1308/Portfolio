@@ -5,7 +5,7 @@ import { LinkedinLogo, InstagramLogo, WhatsappLogo, ArrowDown } from '@phosphor-
 
 export const HeaderWrapper = styled.header`
     background-color: ${COLORS.BACKGROUND};
-    margin-bottom: ${SIZES.MARGIN_BOTTOM};
+    margin-bottom: calc(${SIZES.MARGIN_BOTTOM} + 7rem);
 `;
 
 export const Header = styled.div`
@@ -77,11 +77,6 @@ export const SocialLink = styled.a``;
 export const LinkedIn = styled(LinkedinLogo).attrs({
     size: 22,
     color: COLORS.DARKPRIMARY,
-    CSS: {
-        '&:hover': {
-            color: COLORS.DARKPRIMARY,
-        },
-    },
 })`
     &:hover {
         cursor: pointer;
