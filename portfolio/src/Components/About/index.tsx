@@ -1,6 +1,6 @@
 import React, { FC } from 'react';
 import * as S from './style';
-import { AboutProps } from '../types/about';
+import { AboutProps } from '../../types/about';
 import { SanityImage } from '../SanityImage';
 import Box from '../UI/Box';
 

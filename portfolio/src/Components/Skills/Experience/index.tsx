@@ -1,6 +1,6 @@
 import React, { FC } from 'react';
 import * as S from './style';
-import { Exp } from '@/Components/types/skills';
+import { Exp } from '@/types/skills';
 
 interface Props {
     data: Exp;

@@ -3,7 +3,7 @@ import * as S from './style';
 import { useSanityImage } from '@/Hooks/useSanityImage';
 import Image from 'next/image';
 import { SanityImage } from '../SanityImage';
-import { HeaderProps } from '../types/header';
+import { HeaderProps } from '../../types/header';
 
 interface Props {
     data: HeaderProps;
