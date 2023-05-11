@@ -3,19 +3,10 @@ import * as S from './style';
 import { useSanityImage } from '@/Hooks/useSanityImage';
 import Image from 'next/image';
 import { SanityImage } from '../SanityImage';
+import { HeaderProps } from '../types/header';
 
 interface Props {
-    header: {
-        image: string;
-        name: string;
-        ocupation: string;
-        summary: string;
-        _createdAt: string;
-        _id: string;
-        _rev: string;
-        type: string;
-        _updatedAt: string;
-    };
+    header: HeaderProps;
 }
 
 const Header: FC<Props> = ({ header }) => {
