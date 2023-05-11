@@ -13,3 +13,12 @@ export const flex_center = css`
     justify-content: center;
     align-items: center;
 `;
+
+export const link_reset = css`
+    text-decoration: none;
+    border: none;
+    outline: none;
+    padding: 1.5rem 3rem;
+    display: inline-block;
+    font-weight: 500;
+`;
