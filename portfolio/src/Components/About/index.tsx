@@ -5,11 +5,11 @@ import { SanityImage } from '../SanityImage';
 import Box from '../UI/Box';
 
 interface Props {
-    about: AboutProps;
+    data: AboutProps;
 }
 
-const About: FC<Props> = ({ about }) => {
-    const { image, title, text, button, url } = about;
+const About: FC<Props> = ({ data }) => {
+    const { image, title, text, button, url } = data;
     return (
         <S.About>
             <S.ImageContainer>

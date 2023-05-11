@@ -6,11 +6,11 @@ import { SanityImage } from '../SanityImage';
 import { HeaderProps } from '../types/header';
 
 interface Props {
-    header: HeaderProps;
+    data: HeaderProps;
 }
 
-const Header: FC<Props> = ({ header }) => {
-    const { image, name, ocupation, summary } = header;
+const Header: FC<Props> = ({ data }) => {
+    const { image, name, ocupation, summary } = data;
 
     return (
         <S.HeaderWrapper>
