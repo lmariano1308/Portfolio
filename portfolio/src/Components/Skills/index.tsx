@@ -1,7 +1,7 @@
 import React, { FC } from 'react';
 import * as S from './style';
 import Exp from './Experience';
-import { SkillsProps } from '../types/skills';
+import { SkillsProps } from '../../types/skills';
 import Experience from './Experience';
 
 interface Props {

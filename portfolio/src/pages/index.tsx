@@ -1,26 +1,30 @@
 import About from '@/Components/About';
 import Header from '@/Components/Header';
+import Projects from '@/Components/Projects';
 import Skills from '@/Components/Skills';
-import { AboutProps } from '@/Components/types/about';
-import { HeaderProps } from '@/Components/types/header';
-import { SkillsProps } from '@/Components/types/skills';
+import { AboutProps } from '@/types/about';
+import { HeaderProps } from '@/types/header';
+import { SkillsProps } from '@/types/skills';
 import client from '@/sanity';
+import { ProjectsProps } from '@/types/projects';
 
 export default function Home({
     header,
     about,
     skills,
+    projects,
 }: {
     header: HeaderProps;
     about: AboutProps;
     skills: SkillsProps;
+    projects: ProjectsProps;
 }) {
-    console.log(skills);
     return (
         <>
             <Header data={header} />
             <About data={about} />
             <Skills data={skills} />
+            <Projects data={projects} />
         </>
     );
 }
@@ -29,12 +33,14 @@ export const getStaticProps = async () => {
     const header = await client.fetch(`*[_type == "header"][0]`);
     const about = await client.fetch(`*[_type == "about"][0]`);
     const skills = await client.fetch(`*[_type == "skills"][0]`);
+    const projects = await client.fetch(`*[_type == "projects"][0]`);
 
     return {
         props: {
             header,
             about,
             skills,
+            projects,
         },
     };
 };
