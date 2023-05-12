@@ -41,5 +41,7 @@ export const Link = styled.a`
     &:hover {
         cursor: pointer;
         background-color: ${COLORS.LIGHTPRIMARY};
-    }
+        transform: scale(1.05);
+        transition: transform 0.5s ease-in-out;
+    
 `;

@@ -13,6 +13,7 @@ const Project: FC<Props> = ({ data }) => {
         <S.Project>
             <S.Card href={url}>
                 <S.ImageContainer>
+                    <S.GitHub />
                     <SanityImage alt={`Imagem do projeto ${title}`} src={image} />
                 </S.ImageContainer>
                 {technologies.map(technology => (

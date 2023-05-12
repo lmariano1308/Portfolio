@@ -1,9 +1,15 @@
 import { link_reset } from '@/styles/mixins';
 import { COLORS } from '@/utils/variables';
+import { GithubLogo } from '@phosphor-icons/react';
 import styled from 'styled-components';
 
 export const Project = styled.li`
     cursor: pointer;
+
+    &:hover {
+        transform: translateY(-1rem);
+        transition: transform 0.5s ease-in-out;
+    }
 `;
 
 export const Card = styled.a`
@@ -48,3 +54,13 @@ export const Title = styled.h5`
 `;
 
 export const Resume = styled.p``;
+
+export const GitHub = styled(GithubLogo).attrs({
+    size: 30,
+    color: COLORS.DARKPRIMARY,
+})`
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    z-index: 1;
+`;
