@@ -65,7 +65,7 @@ const Footer: FC<Props> = ({ data }) => {
     };
 
     return (
-        <S.FooterWrapper>
+        <S.FooterWrapper id="footer">
             <S.Footer>
                 <S.Box>
                     <Box text="Contato" />

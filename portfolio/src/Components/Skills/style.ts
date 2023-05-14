@@ -8,15 +8,26 @@ export const Section = styled.section`
     display: flex;
     justify-content: space-between;
     gap: 6rem;
-
     ul {
         list-style: none;
     }
+    @media screen and (max-width: 425px) {
+        margin-bottom: ${SIZES.MARGIN_BOTTOM_MOBILE};
+    }
+    @media screen and (max-width: 768px) {
+        flex-direction: column;
+        align-items: center;
+        scroll-margin-top: 12rem;
+    }
+    scroll-margin-top: 9rem;
 `;
 
 export const Skills = styled.div`
     width: 100%;
     max-width: 47rem;
+    @media screen and (max-width: 768px) {
+        max-width: 60rem;
+    }
 `;
 
 export const Heading = styled.div`

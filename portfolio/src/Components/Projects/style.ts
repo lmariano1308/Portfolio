@@ -7,6 +7,10 @@ export const Projects = styled.section`
     margin-bottom: ${SIZES.MARGIN_BOTTOM};
     display: flex;
     flex-direction: column;
+    scroll-margin-top: 9rem;
+    @media screen and (max-width: 768px) {
+        scroll-margin-top: 12rem;
+    }
 `;
 
 export const ProjectsTitle = styled.h2`
@@ -43,5 +47,5 @@ export const Link = styled.a`
         background-color: ${COLORS.LIGHTPRIMARY};
         transform: scale(1.05);
         transition: transform 0.5s ease-in-out;
-    
+    }
 `;

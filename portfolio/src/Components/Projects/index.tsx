@@ -10,7 +10,7 @@ interface Props {
 const Projects: FC<Props> = ({ data }) => {
     const { url, title, button, projects } = data;
     return (
-        <S.Projects>
+        <S.Projects id="projects">
             <S.ProjectsTitle>{title}</S.ProjectsTitle>
             <S.ProjectsList>
                 {projects.map(project => (

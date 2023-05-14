@@ -10,6 +10,11 @@ export const GlobalStyles = createGlobalStyle`
 
 html {
     font-size: 62.5%;
+    scroll-behavior: smooth;
+    @media screen and (max-width: 1024px) {
+        font-size: 60%;
+    }
+    
 }
 
 body {
@@ -22,6 +27,12 @@ h1 {
     font-size: 7.5rem;
     line-height: 7.5rem;
     color: ${COLORS.PRIMARY};
+    @media screen and (max-width: 1024px) {
+        font-size: 6.5rem;
+    }
+    @media screen and (max-width: 768px) {
+        font-size: 5.5rem;
+    }
 }
 
 h2 {

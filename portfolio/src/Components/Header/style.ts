@@ -6,16 +6,28 @@ import { LinkedinLogo, InstagramLogo, WhatsappLogo, ArrowDown } from '@phosphor-
 export const HeaderWrapper = styled.header`
     background-color: ${COLORS.BACKGROUND};
     margin-bottom: calc(${SIZES.MARGIN_BOTTOM} + 7rem);
+
+    @media screen and (max-width: 425px) {
+        margin-bottom: calc(${SIZES.MARGIN_BOTTOM_MOBILE} + 7rem);
+    }
 `;
 
 export const Header = styled.div`
     ${max_width};
     min-height: 100vh;
     position: relative;
+    @media screen and (max-width: 1130px) {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-top: 12rem;
+        padding-bottom: 4rem;
+    }
 `;
 
 export const ImageContainer = styled.div`
-    width: 45rem;
+    width: 100%;
+    max-width: 45rem;
     height: 45rem;
     position: absolute;
     top: 50%;
@@ -33,6 +45,11 @@ export const ImageContainer = styled.div`
         border-top: 0.5rem solid ${COLORS.LIGHTPRIMARY};
         border-left: 0.5rem solid ${COLORS.LIGHTPRIMARY};
     }
+    @media only screen and (max-width: 1130px) {
+        position: static;
+        transform: translateY(0);
+        margin-bottom: 6rem;
+    }
 `;
 
 export const Content = styled.div`
@@ -43,6 +60,14 @@ export const Content = styled.div`
     top: 50%;
     right: 2rem;
     transform: translateY(-50%);
+    @media only screen and (max-width: 1130px) {
+        position: static;
+        transform: translateY(0);
+        max-width: 60rem;
+        text-align: center;
+        align-items: center;
+        margin-bottom: 2rem;
+    }
 `;
 
 export const Introduction = styled.span`
@@ -56,6 +81,9 @@ export const Resume = styled.p`
     color: ${COLORS.WHITE};
     align-self: flex-end;
     max-width: 45rem;
+    @media only screen and (max-width: 1130px) {
+        align-self: center;
+    }
 `;
 
 export const Social = styled.div`
@@ -65,18 +93,24 @@ export const Social = styled.div`
     align-items: center;
     gap: 2.5rem;
     padding: 2.5rem;
-    background-color: ${COLORS.LIGHTPRIMARY};
+    background-color: ${COLORS.DARKPRIMARY};
     position: fixed;
     top: 4rem;
     right: 2rem;
     z-index: 12;
+    @media only screen and (max-width: 1130px) {
+        flex-direction: row;
+        background-color: transparent;
+        position: static;
+        margin-bottom: 2rem;
+    }
 `;
 
 export const SocialLink = styled.a``;
 
 export const LinkedIn = styled(LinkedinLogo).attrs({
-    size: 22,
-    color: COLORS.DARKPRIMARY,
+    size: 30,
+    color: COLORS.LIGHTPRIMARY,
 })`
     &:hover {
         cursor: pointer;
@@ -85,8 +119,8 @@ export const LinkedIn = styled(LinkedinLogo).attrs({
 `;
 
 export const Instagram = styled(InstagramLogo).attrs({
-    size: 22,
-    color: COLORS.DARKPRIMARY,
+    size: 30,
+    color: COLORS.LIGHTPRIMARY,
 })`
     &:hover {
         cursor: pointer;
@@ -95,8 +129,8 @@ export const Instagram = styled(InstagramLogo).attrs({
 `;
 
 export const Whatsapp = styled(WhatsappLogo).attrs({
-    size: 22,
-    color: COLORS.DARKPRIMARY,
+    size: 30,
+    color: COLORS.LIGHTPRIMARY,
 })`
     &:hover {
         cursor: pointer;
@@ -123,6 +157,9 @@ export const Arrow = styled.a`
     bottom: 4rem;
     left: 50%;
     animation: ${upDown} 0.5s infinite alternate;
+    @media only screen and (max-width: 1130px) {
+        position: static;
+    }
 `;
 
 export const ArrowIcon = styled(ArrowDown).attrs({
