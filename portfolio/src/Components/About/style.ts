@@ -9,12 +9,28 @@ export const About = styled.section`
     display: flex;
     justify-content: space-between;
     align-items: center;
+    scroll-margin-top: 9rem;
+    @media screen and (max-width: 425px) {
+        margin-bottom: ${SIZES.MARGIN_BOTTOM_MOBILE};
+    }
+
+    @media screen and (max-width: 1240px) {
+        flex-direction: column;
+        scroll-margin-top: 19rem;
+    }
 `;
 
 export const ImageContainer = styled.div`
-    width: 47rem;
+    width: 100%;
+    max-width: 47rem;
     height: 43rem;
     position: relative;
+    @media screen and (max-width: 1240px) {
+        margin-bottom: 3rem;
+    }
+    @media screen and (max-width: 768px) {
+        max-width: 37rem;
+    }
 `;
 
 export const Content = styled.div`
@@ -41,4 +57,7 @@ export const BoxContainer = styled.div`
     position: absolute;
     top: -7rem;
     left: -3rem;
+    @media screen and (max-width: 425px) {
+        display: none;
+    }
 `;

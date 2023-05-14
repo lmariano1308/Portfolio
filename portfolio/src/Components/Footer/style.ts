@@ -5,6 +5,7 @@ import styled from 'styled-components';
 
 export const FooterWrapper = styled.footer`
     background-color: ${COLORS.BACKGROUND};
+    scroll-margin-top: 8rem;
 `;
 
 export const Footer = styled.div`
@@ -22,6 +23,9 @@ export const Box = styled.div`
     position: absolute;
     top: -5rem;
     left: 2rem;
+    @media screen and (max-width: 768px) {
+        display: none;
+    }
 `;
 
 export const Title = styled.h2`

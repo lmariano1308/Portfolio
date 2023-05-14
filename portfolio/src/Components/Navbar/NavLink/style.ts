@@ -6,6 +6,11 @@ export const Item = styled.li`
     &:not(:last-of-type) {
         margin-right: 2rem;
     }
+    @media screen and (max-width: 768px) {
+        &:not(:last-of-type) {
+            margin: 0;
+        }
+    }
 `;
 
 export const Link = styled.a`

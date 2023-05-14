@@ -11,7 +11,7 @@ interface Props {
 const About: FC<Props> = ({ data }) => {
     const { image, title, text, button, url } = data;
     return (
-        <S.About>
+        <S.About id="about">
             <S.ImageContainer>
                 <SanityImage src={image} alt="Foto na empresa Mindtech" />
                 <S.BoxContainer>

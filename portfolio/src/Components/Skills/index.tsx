@@ -16,7 +16,7 @@ const Skills: FC<Props> = ({ data }) => {
     const renderExperience = experience.map(exp => <Experience key={exp._key} data={exp} />);
 
     return (
-        <S.Section>
+        <S.Section id="skills">
             <S.Skills>
                 <S.Heading>
                     <S.Title>{title}</S.Title>

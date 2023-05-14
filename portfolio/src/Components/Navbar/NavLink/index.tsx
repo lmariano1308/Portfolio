@@ -3,12 +3,16 @@ import * as S from './style';
 
 interface Props {
     text: string;
+    url: string;
+    toggleMenu?: () => void;
 }
 
-const NavLink: FC<Props> = ({ text }) => {
+const NavLink: FC<Props> = ({ text, url, toggleMenu }) => {
     return (
         <S.Item>
-            <S.Link href="#">{text}</S.Link>
+            <S.Link href={url} onClick={toggleMenu}>
+                {text}
+            </S.Link>
         </S.Item>
     );
 };
