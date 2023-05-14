@@ -10,6 +10,7 @@ import { SkillsProps } from '@/types/skills';
 import { ProjectsProps } from '@/types/projects';
 import { FooterProps } from '@/types/footer';
 import { SocialProps } from '@/types/social';
+import Navbar from '@/Components/Navbar';
 
 export default function Home({
     header,
@@ -28,6 +29,7 @@ export default function Home({
 }) {
     return (
         <>
+            <Navbar />
             <Header data={header} socialData={social} />
             <About data={about} />
             <Skills data={skills} />
