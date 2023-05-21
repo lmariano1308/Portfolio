@@ -103,6 +103,7 @@ export const Social = styled.div`
         background-color: transparent;
         position: static;
         margin-bottom: 2rem;
+        z-index: 0;
     }
 `;
 

@@ -44,7 +44,7 @@ export const NavbarMobileListIcon = styled(List).attrs({
     color: COLORS.PRIMARY,
 })`
     display: none;
-    @media screen and (min-width: 768px) {
+    @media screen and (max-width: 768px) {
         display: inline-block;
     }
     &:hover {
@@ -57,10 +57,9 @@ export const NavbarMobileBackground = styled.div<{ $active: boolean }>`
     position: fixed;
     top: 0;
     right: ${({ $active }) => ($active ? '0' : '-100rem')};
-    max-width: 35rem;
-    width: 100%;
+    width: 40rem;
     height: 100vh;
-    background-color: ${COLORS.BACKGROUND};
+    background-color: ${COLORS.DARKPRIMARY};
     padding: 2rem;
     transition: all 0.5s ease-in;
 `;
@@ -88,7 +87,7 @@ export const NavbarMobileCloseIcon = styled(X).attrs({
     color: COLORS.PRIMARY,
 })`
     display: none;
-    @media screen and (min-width: 768px) {
+    @media screen and (max-width: 768px) {
         display: inline-block;
     }
     &:hover {

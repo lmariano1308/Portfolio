@@ -1,4 +1,3 @@
-
 # Lucas Mariano - Front End/Mobile Developer Portfolio
 
 Portfolio pessoal Fullstack criado em Next.JS com TypeScript e Sanity.
@@ -27,15 +26,17 @@ Para Executar o Projeto, Disponibilizei um guia abaixo.
 Após baixar os arquivos, o projeto contém duas pastas, portfolio e portfolio-backend, basta ir até as duas pastas, e executar o comando:
 
 ```shell
-yarn install
+pnpm install
 ```
 
 Após instalar, navegue até a pasta portfolio e execute:
 
 ```shell
-yarn dev
+pnpm dev
 ```
+
 Para rodar o Sanity, basta navegar até a pasta portfolio-backend e executar:
+
 ```shell
 sanity start
 ```

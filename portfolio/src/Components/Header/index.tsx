@@ -36,7 +36,7 @@ const Header: FC<Props> = ({ data, socialData }) => {
                         <S.Whatsapp />
                     </S.SocialLink>
                 </S.Social>
-                <S.Arrow href="#">
+                <S.Arrow href="#about">
                     <S.ArrowIcon />
                 </S.Arrow>
             </S.Header>
