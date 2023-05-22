@@ -9,7 +9,7 @@ Você pode acessar o app diretamente por esse link: https://portfolio-lucas-mari
 ## Descrição do Projeto
 
 Nesse projeto, desenvolvi meu portfolio totalmente em Next.JS e utilizando o Sanity.io como backend para renderização de textos e imagens, há tempos tinha idealizado começar a fazer meu portfolio, e com meu avanço no desenvolvimento com React e Typescript, resolvi estudar Next.Js, e gostaria de performar sozinho uma aplicação Fullstack.
-O projeto ainda está em desenvolvimento, devido ao nascimento do meu filho e rotina de trabalho, acabo por não ter muito tempo pra realmente executar o projeto em minha casa. Porém, sinto que já foi um ótimo passo começar o projeto, e pretendo terminar ele o quanto antes.
+O projeto ainda está em desenvolvimento, devido ao nascimento do meu filho e rotina de trabalho, acabo por não ter muito tempo pra realmente executar o projeto em minha casa. Porém, sinto que já foi um ótimo passo começar o mesmo, e tenho certeza que nunca vai ser finalizado, pois sempre estou aprendendo coisas novas, e quero usar o portfolio como playground para aplicar meus novos conhecimentos, buscando sempre atualiza-lo.
 
 ## Frameworks e Ferramentas Utilizadas:
 
