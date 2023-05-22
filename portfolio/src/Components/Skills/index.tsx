@@ -3,6 +3,7 @@ import * as S from './style';
 import Exp from './Experience';
 import { SkillsProps } from '../../types/skills';
 import Experience from './Experience';
+import { createNoSubstitutionTemplateLiteral } from 'typescript';
 
 interface Props {
     data: SkillsProps;
@@ -20,7 +21,9 @@ const Skills: FC<Props> = ({ data }) => {
             <S.Skills>
                 <S.Heading>
                     <S.Title>{title}</S.Title>
-                    <S.SubTitle>{subtitle}</S.SubTitle>
+                    {subtitle.map((sub, index) => (
+                        <S.SubTitle key={index}>{sub.paragraph}</S.SubTitle>
+                    ))}
                 </S.Heading>
                 <S.ExperiencieTitle>{experience_title}</S.ExperiencieTitle>
                 <S.ExperiencieList>{renderExperience}</S.ExperiencieList>

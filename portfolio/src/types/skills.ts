@@ -2,6 +2,7 @@ export interface Exp {
     period: string;
     company: string;
     experience: string;
+    description: string;
     _key: string;
 }
 
@@ -19,6 +20,8 @@ export interface SkillsProps {
     experience_title: string;
     skills_list: Skills[];
     skills_title: string;
-    subtitle: string;
+    subtitle: {
+        paragraph: string;
+    }[];
     title: string;
 }

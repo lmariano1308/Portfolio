@@ -4,7 +4,24 @@ export default {
   type: "document",
   fields: [
     { name: "title", title: "Title", type: "string" },
-    { name: "subtitle", title: "Subtitle", type: "text" },
+    {
+      name: "subtitle",
+      title: "Subtitle text",
+      type: "array",
+      of: [
+        {
+          title: "Subtitle Text",
+          type: "object",
+          fields: [
+            {
+              name: "paragraph",
+              title: "Paragraph",
+              type: "text",
+            },
+          ],
+        },
+      ],
+    },
     { name: "skills_title", title: "Skills Title", type: "string" },
     {
       name: "skills_list",
@@ -48,6 +65,11 @@ export default {
               name: "period",
               title: "Period",
               type: "string",
+            },
+            {
+              name: "description",
+              title: "Description",
+              type: "text",
             },
           ],
         },
