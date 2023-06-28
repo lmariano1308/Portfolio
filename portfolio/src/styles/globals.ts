@@ -20,6 +20,8 @@ html {
 body {
     font-size: 1.6rem;
     font-family: ${FONTS.PRIMARY};
+    background: rgb(16,9,58);
+background: linear-gradient(180deg, rgba(16,9,58,1) 20%, rgba(83,47,168,1) 50%, rgba(16,9,58,1) 80%);
 }
 
 h1 {
@@ -37,31 +39,31 @@ h1 {
 
 h2 {
     font-size: 4.8rem;
-    color: ${COLORS.BACKGROUND};
+    color: ${COLORS.WHITE};
     font-weight: 500;
 }
 
 h3 {
     font-size: 3.6rem;
-    color: ${COLORS.BACKGROUND};
+    color: ${COLORS.WHITE};
     font-weight: 500;
 }
 
 h4 {
     font-size: 2.4rem;
-    color: ${COLORS.BACKGROUND};
+    color: ${COLORS.WHITE};
     font-weight: 500;
 }
 
 h5 {
     font-size: 2.1rem;
-    color: ${COLORS.BLACK};
+    color: ${COLORS.WHITE};
     font-weight: 500;
 }
 
 h6 {
     font-size: 1.6rem;
-    color: ${COLORS.BLACK};
+    color: ${COLORS.WHITE};
     font-weight: 500;
 }
 
@@ -69,7 +71,7 @@ p {
     font-weight: 400;
     font-size: 1.6rem;
     line-height: 2.5rem;
-    color: ${COLORS.BLACK};
+    color: ${COLORS.WHITE};
 
     &:not(:last-of-type) {
         margin-bottom: 1.5rem;

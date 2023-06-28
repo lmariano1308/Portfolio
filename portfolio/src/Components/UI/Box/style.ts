@@ -11,7 +11,7 @@ export const Box = styled.div`
 
 export const BoxText = styled.h5`
     text-transform: uppercase;
-    color: ${COLORS.DARKPRIMARY};
+    color: ${COLORS.WHITE};
     writing-mode: vertical-rl;
     text-orientation: upright;
 `;

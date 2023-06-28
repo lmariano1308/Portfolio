@@ -111,7 +111,7 @@ export const SocialLink = styled.a``;
 
 export const LinkedIn = styled(LinkedinLogo).attrs({
     size: 30,
-    color: COLORS.LIGHTPRIMARY,
+    color: COLORS.WHITE,
 })`
     &:hover {
         cursor: pointer;
@@ -121,7 +121,7 @@ export const LinkedIn = styled(LinkedinLogo).attrs({
 
 export const Instagram = styled(InstagramLogo).attrs({
     size: 30,
-    color: COLORS.LIGHTPRIMARY,
+    color: COLORS.WHITE,
 })`
     &:hover {
         cursor: pointer;
@@ -131,7 +131,7 @@ export const Instagram = styled(InstagramLogo).attrs({
 
 export const Whatsapp = styled(WhatsappLogo).attrs({
     size: 30,
-    color: COLORS.LIGHTPRIMARY,
+    color: COLORS.WHITE,
 })`
     &:hover {
         cursor: pointer;

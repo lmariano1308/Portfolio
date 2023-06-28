@@ -15,7 +15,7 @@ export const Item = styled.li`
 
 export const Link = styled.a`
     text-decoration: none;
-    color: ${COLORS.LIGHTPRIMARY};
+    color: ${COLORS.WHITE};
     padding: 1rem;
     cursor: pointer;
     &:hover {
