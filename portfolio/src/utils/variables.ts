@@ -1,8 +1,8 @@
 export const COLORS = {
-    BACKGROUND: '#27232C',
-    PRIMARY: '#71EAC6',
-    LIGHTPRIMARY: '#BEE0D6',
-    DARKPRIMARY: '#254B45',
+    BACKGROUND: '#10093a',
+    PRIMARY: '#a266ef',
+    LIGHTPRIMARY: '#8434bf',
+    DARKPRIMARY: '#532fa8',
     ERROR: '#FF8989',
     WHITE: '#FFFFFF',
     GRAY: '#808080',
@@ -10,7 +10,7 @@ export const COLORS = {
 };
 
 export const FONTS = {
-    PRIMARY: 'Roboto, sans-serif',
+    PRIMARY: 'Poppins, sans-serif',
 };
 
 export const SIZES = {

@@ -45,7 +45,7 @@ export const Biography = styled.p``;
 export const Link = styled.a`
     ${link_reset};
     background-color: ${COLORS.PRIMARY};
-    color: ${COLORS.DARKPRIMARY};
+    color: ${COLORS.WHITE};
     margin-top: 1.5rem;
     &:hover {
         cursor: pointer;

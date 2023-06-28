@@ -11,6 +11,7 @@ import { ProjectsProps } from '@/types/projects';
 import { FooterProps } from '@/types/footer';
 import { SocialProps } from '@/types/social';
 import Navbar from '@/Components/Navbar';
+import Reveal from '@/Components/UI/Reveal';
 
 export default function Home({
     header,
@@ -30,11 +31,21 @@ export default function Home({
     return (
         <>
             <Navbar />
-            <Header data={header} socialData={social} />
-            <About data={about} />
-            <Skills data={skills} />
-            <Projects data={projects} />
-            <Footer data={footer} />
+            <Reveal width="100%">
+                <Header data={header} socialData={social} />
+            </Reveal>
+            <Reveal width="100%">
+                <About data={about} />
+            </Reveal>
+            <Reveal width="100%">
+                <Skills data={skills} />
+            </Reveal>
+            <Reveal width="100%">
+                <Projects data={projects} />
+            </Reveal>
+            <Reveal width="100%">
+                <Footer data={footer} />
+            </Reveal>
         </>
     );
 }
