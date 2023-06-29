@@ -9,11 +9,9 @@ interface Props {
 
 const NavLink: FC<Props> = ({ text, url, toggleMenu }) => {
     return (
-        <S.Item>
-            <S.Link href={url} onClick={toggleMenu}>
-                {text}
-            </S.Link>
-        </S.Item>
+        <S.Link href={url} onClick={toggleMenu}>
+            {text}
+        </S.Link>
     );
 };
 

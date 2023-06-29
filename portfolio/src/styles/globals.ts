@@ -21,13 +21,12 @@ body {
     font-size: 1.6rem;
     font-family: ${FONTS.PRIMARY};
     background: rgb(16,9,58);
-background: linear-gradient(180deg, rgba(16,9,58,1) 20%, rgba(83,47,168,1) 50%, rgba(16,9,58,1) 80%);
 }
 
 h1 {
     font-weight: 700;
-    font-size: 7.5rem;
-    line-height: 7.5rem;
+    font-size: 5.6rem;
+    line-height: 1.1;
     color: ${COLORS.PRIMARY};
     @media screen and (max-width: 1024px) {
         font-size: 6.5rem;

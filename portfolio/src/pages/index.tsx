@@ -1,5 +1,5 @@
 import About from '@/Components/About';
-import Header from '@/Components/Header';
+import Hero from '@/Components/Hero';
 import Projects from '@/Components/Projects';
 import Skills from '@/Components/Skills';
 import Footer from '@/Components/Footer';
@@ -11,7 +11,8 @@ import { ProjectsProps } from '@/types/projects';
 import { FooterProps } from '@/types/footer';
 import { SocialProps } from '@/types/social';
 import Navbar from '@/Components/Navbar';
-import Reveal from '@/Components/UI/Reveal';
+import { Container } from '@/styles/main';
+import Header from '@/Components/Header';
 
 export default function Home({
     header,
@@ -29,24 +30,15 @@ export default function Home({
     social: SocialProps;
 }) {
     return (
-        <>
+        <Container>
             <Navbar />
-            <Reveal width="100%">
-                <Header data={header} socialData={social} />
-            </Reveal>
-            <Reveal width="100%">
-                <About data={about} />
-            </Reveal>
-            <Reveal width="100%">
-                <Skills data={skills} />
-            </Reveal>
-            <Reveal width="100%">
-                <Projects data={projects} />
-            </Reveal>
-            <Reveal width="100%">
-                <Footer data={footer} />
-            </Reveal>
-        </>
+            <Header />
+            {/* <Hero data={header} socialData={social} /> */}
+            {/* <About data={about} /> */}
+            {/* <Skills data={skills} /> */}
+            {/* <Projects data={projects} /> */}
+            {/* <Footer data={footer} /> */}
+        </Container>
     );
 }
 
